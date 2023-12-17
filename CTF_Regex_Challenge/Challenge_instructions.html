@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regex Challenge</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			text-align: center;
+			color: #333;
+			font-size: 36px;
+			margin-top: 50px;
+		}
+		table {
+			margin: auto;
+			border-collapse: collapse;
+			margin-top: 50px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+			background-color: #fff;
+		}
+		th, td {
+			padding: 10px;
+			text-align: center;
+			border: 1px solid #ccc;
+		}
+		th {
+			font-weight: bold;
+			color: #0072c6;
+			background-color: #f2f2f2;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align:center">Regex Challenge</h1>
+    <table>
+		<tr>
+			<th></th>
+			<th>[\@\+]\s?(2|9|1|0)?[r-u]{0,1}[DEPLOYMENT]+[\%\$]</th>
+			<th>[\#\-]\d*(JH|VD)[^GITHUB]+[\^\*]</th>
+		</tr>
+		<tr>
+			<th>[\@\#]\w*[F-O][THOUGHTWORKS]+[\%\^]</th>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<th>(?i)[\+\-] ?[1-5](R|V)[ENDPOINT]{5}([skype!]|[hub])+[\$\*]</th>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+		</tr>
+	</table>
+	<p style="text-align:center">Instructions:</p>
+	<ol>
+		<li>The challenge consists of a table with two columns and two rows. Each row and column contains a regular expression that you will use to create a new regular expression.</li>
+		<li>To do this, you must combine the regular expressions in the corresponding row and column to create a new regular expression that satisfies both conditions.</li>
+		<li>For example,(see table below) if the row regular expression is <code>[a-p]</code> (one lowercase letter between a and p) and the column regular expression is <code>[rotem]</code> (one of the following letters: "r", "o", "t", "e", "m"), the combined regular expression would be <code>[oem]</code> because "r" and "t" are not in the "a-p" range, and all letters that are in "a-p" but not in "rotem" do not satisfy the column condition.</li>
+		<li>You must repeat this process for each empty slot in the table, using the regular expressions in the corresponding row and column to create a new regular expression that satisfies both conditions.</li>
+		<li>Once you have filled in all four empty slots with the correct regular expressions, you will have completed the Regex Sudoku challenge.</li>
+		<li>Your task is to extract the flag from the attached text file using the regex you have found.</li>
+	</ol>
+
+	<table>
+		<tr>
+			<th></th>
+			<th><code>"[a-p]"</code></th>
+		</tr>
+		<tr>
+			<th><code>"[rotem]"</code></th>
+			<td><code>Regex1 = "[oem]"</code></td>
+		</tr>
+	</table>
+    <p style="text-align:center">Good luck!</p>
+</body>
+</html>
